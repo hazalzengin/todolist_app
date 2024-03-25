@@ -2,7 +2,11 @@ import 'package:apptodolist/const/color.dart';
 import 'package:flutter/material.dart';
 
 class TaskState extends StatefulWidget {
+<<<<<<< HEAD
   const TaskState({Key? key});
+=======
+  const TaskState({super.key});
+>>>>>>> 2e1884a9d454989d82d1f68feb4560e9bd550945
 
   @override
   State<TaskState> createState() => _TaskStateState();
@@ -13,6 +17,7 @@ class _TaskStateState extends State<TaskState> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: backgroundColors,
+<<<<<<< HEAD
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
@@ -99,6 +104,43 @@ class _TaskStateState extends State<TaskState> {
           ),
         ),
       ),
+=======
+      body:SafeArea(
+        child:Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 15),
+          child: Container(
+            width: double.infinity,
+            height:130,
+            decoration: BoxDecoration(
+              borderRadius:BorderRadius.circular(10) ,
+              color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  color:Colors.grey.withOpacity(0.2),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0,2),
+                )
+              ]
+            ),
+            child:Row(
+              children: [
+                Container(
+                  height: 130,
+                  width: 100,
+                  decoration: BoxDecoration(
+                    color:Colors.white,
+                    image: DecorationImage(
+                      image: AssetImage('images/kod.jpeg')
+                    )
+                  ),
+                )
+              ],
+            )
+          ),
+        )
+      )
+>>>>>>> 2e1884a9d454989d82d1f68feb4560e9bd550945
     );
   }
 }
