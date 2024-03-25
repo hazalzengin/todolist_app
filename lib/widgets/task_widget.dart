@@ -2,11 +2,7 @@ import 'package:apptodolist/const/color.dart';
 import 'package:flutter/material.dart';
 
 class TaskState extends StatefulWidget {
-<<<<<<< HEAD
   const TaskState({Key? key});
-=======
-  const TaskState({super.key});
->>>>>>> 2e1884a9d454989d82d1f68feb4560e9bd550945
 
   @override
   State<TaskState> createState() => _TaskStateState();
@@ -17,7 +13,7 @@ class _TaskStateState extends State<TaskState> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: backgroundColors,
-<<<<<<< HEAD
+
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
@@ -104,7 +100,6 @@ class _TaskStateState extends State<TaskState> {
           ),
         ),
       ),
-=======
       body:SafeArea(
         child:Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 15),
@@ -140,7 +135,7 @@ class _TaskStateState extends State<TaskState> {
           ),
         )
       )
->>>>>>> 2e1884a9d454989d82d1f68feb4560e9bd550945
+
     );
   }
 }
